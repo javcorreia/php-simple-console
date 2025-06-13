@@ -22,10 +22,6 @@ Optionally, it can be run locally without using docker:
   ```
   - change your `.env` according to your needs
 ## Running with docker
-- install vendor
-  ```shell
-  bin/composer install
-  ```
 - execute the stack
   ```shell
   docker compose up -d
@@ -33,6 +29,10 @@ Optionally, it can be run locally without using docker:
 - to watch the logs for symfony's VarDumper server
   ```shell
   docker compose -f app-php-console-1
+  ```
+- install vendor
+  ```shell
+  bin/composer install
   ```
 - run the console 
   ```shell
