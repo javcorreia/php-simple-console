@@ -1,0 +1,13 @@
+services:
+  php-console:
+    build:
+      dockerfile: docker/php-cli.Dockerfile
+      context: .
+    volumes:
+      - '.:/app'
+    environment:
+      - PHP_CS_FIXER_IGNORE_ENV=1
+      - VAR_DUMPER_FORMAT=server
+    command: ./vendor/bin/var-dump-server
+    ports:
+      - '9912:9912'
