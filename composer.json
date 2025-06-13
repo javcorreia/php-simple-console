@@ -1,0 +1,23 @@
+{
+    "name": "javcorreia/standalone-app-01",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "AppConsole\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "José Correia",
+            "email": "javcorreia@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "symfony/var-dumper": "^7.3",
+        "roave/security-advisories": "dev-latest"
+    },
+    "require": {
+        "php": "^8.4",
+        "symfony/console": "^7.3"
+    }
+}
