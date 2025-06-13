@@ -2,3 +2,4 @@ vendor/
 playground/
 .idea
 .php-cs-fixer.cache
+.env
